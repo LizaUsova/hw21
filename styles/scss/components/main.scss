@@ -1,0 +1,34 @@
+.promo {
+  background-color: transparent;
+  padding-top: 100px;
+
+  &__title {
+    @include justify-content(flex-start);
+
+    gap: 40px;
+    max-width: 660px;
+
+    .btn {
+      &__promo {
+        @include btn-f-size(20px);
+        padding: 12px 60px;
+        border-radius: $border-r-sm $border-r-md $border-r-sm;
+      }
+    }
+
+    form {
+      label {
+        font-family: $f-poppins-light;
+        font-size: $f-md;
+        color: $color-light;
+      }
+    }
+  }
+}
+
+
+
+.content {
+  @include justify-content(space-between);
+  padding-top: 350px;
+}

@@ -1,0 +1,17 @@
+%titles {
+  font-family: $f-poppins-medium;
+  color: $color-black;
+}
+
+%flexible {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+%btn {
+  font-family: $f-poppins-regular;
+  color: $color-light;
+  background-color: $color-dark-blue;
+  border: 1px solid $color-dark-blue;
+}

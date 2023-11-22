@@ -1,41 +1,132 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Inter';
-  src: local("./../../assets/fonts/Inter Regular"), local("Inter-Regular"), url("./../../assets/fonts/Inter-Regular.woff2") format("woff2"), url("./../../assets/fonts/Inter-Regular.woff") format("woff"), url("./../../assets/fonts/Inter-Regular.ttf") format("truetype");
+  src: local("./../../../assets/fonts/Inter Regular"), local("Inter-Regular"), url("./../../../assets/fonts/Inter-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Inter-Regular.woff") format("woff"), url("./../../../assets/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Itim';
-  src: local("./../../assets/fonts/Itim Regular"), local("Itim-Regular"), url("./../../assets/fonts/Itim-Regular.woff2") format("woff2"), url("./../../assets/fonts/Itim-Regular.woff") format("woff"), url("./../../assets/fonts/Itim-Regular.ttf") format("truetype");
+  src: local("./../../../assets/fonts/Itim Regular"), local("Itim-Regular"), url("./../../../assets/fonts/Itim-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Itim-Regular.woff") format("woff"), url("./../../../assets/fonts/Itim-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Poppins-regular';
-  src: local("./../../assets/fonts/Poppins Regular"), local("Poppins-Regular"), url("./../../assets/fonts/Poppins-Regular.woff2") format("woff2"), url("./../../assets/fonts/Poppins-Regular.woff") format("woff"), url("./../../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: local("./../../../assets/fonts/Poppins Regular"), local("Poppins-Regular"), url("./../../../assets/fonts/Poppins-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Regular.woff") format("woff"), url("./../../../assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Poppins-light';
-  src: local("./../../assets/fonts/Poppins Light"), local("Poppins-Light"), url("./../../assets/fonts/Poppins-Light.woff2") format("woff2"), url("./../../assets/fonts/Poppins-Light.woff") format("woff"), url("./../../assets/fonts/Poppins-Light.ttf") format("truetype");
+  src: local("./../../../assets/fonts/Poppins Light"), local("Poppins-Light"), url("./../../../assets/fonts/Poppins-Light.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Light.woff") format("woff"), url("./../../../assets/fonts/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'Poppins-medium';
-  src: local("Poppins Medium"), local("Poppins-Medium"), url("./../../assets/fonts/Poppins-Medium.woff2") format("woff2"), url("./../../assets/fonts/Poppins-Medium.woff") format("woff"), url("./../../assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("./../../../assets/fonts/Poppins-Medium.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Medium.woff") format("woff"), url("./../../../assets/fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Poppins-semi-bold';
-  src: local("Poppins Semi Bold"), local("Poppins-Semi-Bold"), url("./../../assets/fonts/Poppins-SemiBold.woff2") format("woff2"), url("./../../assets/fonts/Poppins-SemiBold.woff") format("woff"), url("./../../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  src: local("Poppins Semi Bold"), local("Poppins-Semi-Bold"), url("./../../../assets/fonts/Poppins-SemiBold.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-SemiBold.woff") format("woff"), url("./../../../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+  text-decoration: none; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+/*@media (prefers-reduced-motion: reduce) {*/
+/*    * {*/
+/*        animation-duration: 0.01ms !important;*/
+/*        animation-iteration-count: 1 !important;*/
+/*        transition-duration: 0.01ms !important;*/
+/*        scroll-behavior: auto !important;*/
+/*    }*/
+/*}*/
 h2, h3, h4 {
   font-family: "Poppins-medium", sans-serif;
-  color: rgba(0, 0, 0, 0.7); }
+  color: #000; }
+
+header nav, header nav .menu, header nav .menu__list, .promo__title, .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+header nav .menu .btn__header, .promo__title .btn__promo {
+  font-family: "Poppins-regular", sans-serif;
+  color: white;
+  background-color: #2EACF3;
+  border: 1px solid #2EACF3; }
+
+body {
+  margin: 0 auto; }
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto; }
 
 h1 {
   font-family: "Poppins-medium", sans-serif;
   color: white;
-  font-size: 70px; }
+  font-size: 70px;
+  padding-bottom: 40px; }
 
 h2 {
   font-size: 70px; }
@@ -50,5 +141,65 @@ h5 {
   font-family: "Poppins-semi-bold", sans-serif;
   color: rgba(0, 0, 0, 0.7);
   font-size: 22px; }
+
+picture img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  top: 0;
+  min-width: 50%;
+  min-height: 50%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+span {
+  color: #2EACF3; }
+
+header {
+  padding: 25px 0;
+  background-color: transparent; }
+  header nav {
+    justify-content: space-between;
+    background-color: transparent; }
+    header nav .menu {
+      justify-content: space-between;
+      gap: 80px; }
+      header nav .menu__list {
+        justify-content: space-between;
+        gap: 60px; }
+      header nav .menu__link {
+        font-family: "Poppins-light", sans-serif;
+        color: white;
+        font-size: 16px; }
+      header nav .menu .btn__header {
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 10px 20px; }
+
+.promo {
+  background-color: transparent;
+  padding-top: 100px; }
+  .promo__title {
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 660px; }
+    .promo__title .btn__promo {
+      font-size: 20px;
+      padding: 12px 60px;
+      border-radius: 6px 28px 6px; }
+    .promo__title form label {
+      font-family: "Poppins-light", sans-serif;
+      font-size: 14px;
+      color: white; }
+
+.content {
+  justify-content: space-between;
+  padding-top: 350px; }
 
 /*# sourceMappingURL=style.css.map */

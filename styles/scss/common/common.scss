@@ -1,0 +1,58 @@
+body {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: $content-width;
+  padding: 0 $container-offset;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: $f-poppins-medium;
+  color: $color-light;
+  font-size: 70px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  @include title(70px)
+}
+
+h3 {
+  @include title(45px)
+}
+
+h4 {
+  @include title(35px)
+}
+
+h5 {
+  font-family: $f-poppins-semi-bold;
+  color: $color-dark;
+  font-size: 22px;
+}
+
+picture {
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    min-width: 50%;
+    min-height: 50%;
+    margin: 0 auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: $color-dark-blue;
+}

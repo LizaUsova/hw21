@@ -6,11 +6,63 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>hw21</title>
-    <link rel="stylesheet" href="./styles/css/reset.css">
     <link rel="stylesheet" href="./styles/css/style.css">
 </head>
 <body>
-<h1>hello</h1>
-<h2>lorem</h2>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="#"><img class="logo__img" src="./assets/pictures/icons/logo.svg" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Terms of use</a></li>
+                </ul>
+                <div class="btn">
+                    <a class="btn__header" href="#" >Take the test!</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <picture>
+        <source srcset="assets/pictures/img/bg.webp, assets/pictures/img/bg_2x.webp 2x" type="image/webp">
+        <img src="assets/pictures/img/bg.jpg" srcset="assets/pictures/img/bg_2x.jpg 2x" alt="title" loading="lazy" width="1440" height="800">
+    </picture>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__title">
+                <h1>The most accurate IQ test!</h1>
+                <div class="btn">
+                    <a class="btn__promo" href="#">Take the test!</a>
+                </div>
+                <form action="#" method="get">
+                    <label>
+                    <input class="custom-checkbox" type="checkbox" name="accept" value="yes">
+                        By clicking "Take the test!" you accept that you have <br> read and acknowledged our <span>terms and conditions</span>.
+                    </label>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="content-block__first">
+                <h3>Test Your IQ!</h3>
+                <p>This site online IQ tests and is designed to help people learn more about human intelligence. IQ tests are one of the most common tools used by researchers to try to understand and measure human intelligence.</p>
+                <p><span>Take the test </span>and find out yours!</p>
+            </div>
+            <div class="content-block__second"></div>
+            <div class="content-block__third"></div>
+        </div>
+    </section>
+
+</main>
+
+<footer></footer>
 </body>
 </html>
