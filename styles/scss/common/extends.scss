@@ -3,6 +3,12 @@
   color: $color-black;
 }
 
+%text-main {
+  font-family: $f-poppins-regular;
+  color: $color-dark;
+  line-height: 1.4;
+}
+
 %flexible {
   display: flex;
   flex-wrap: wrap;
@@ -14,4 +20,10 @@
   color: $color-light;
   background-color: $color-dark-blue;
   border: 1px solid $color-dark-blue;
+}
+
+%image {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
 }

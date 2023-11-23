@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  max-width: $content-width;
+  max-width: $container-width;
   padding: 0 $container-offset;
   margin: 0 auto;
 }
@@ -38,12 +38,11 @@ picture {
     position: absolute;
     left: 0;
     right: 0;
-    max-width: 100%;
     height: auto;
     object-fit: cover;
     z-index: -1;
     top: 0;
-    min-width: 50%;
+    min-width: 100%;
     min-height: 50%;
     margin: 0 auto;
   }
