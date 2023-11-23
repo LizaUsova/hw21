@@ -103,17 +103,17 @@ h2, h3, h4 {
   font-family: "Poppins-medium", sans-serif;
   color: #000; }
 
-.content p, .instruction__card-icon p {
+.content p, .instruction__card-description {
   font-family: "Poppins-regular", sans-serif;
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.4; }
 
-header nav, header nav .menu, header nav .menu__list, .promo__title, .content, .content .content-block, .instruction__cards, .instruction__card, .instruction__card-row {
+header nav, header nav .menu, header nav .menu__list, .promo__title, .content, .content .content-block, .instruction__inner, .instruction__cards, .instruction__card, .instruction__card-row, .instruction__clicking {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
 
-header nav .menu .btn__header, .promo__title .btn__promo {
+header nav .menu .btn__header, .promo .btn__promo, .instruction .btn__instruction {
   font-family: "Poppins-regular", sans-serif;
   color: white;
   background-color: #2EACF3;
@@ -171,6 +171,10 @@ a {
 span {
   color: #2EACF3; }
 
+label {
+  font-family: "Poppins-light", sans-serif;
+  font-size: 14px; }
+
 header {
   padding: 25px 0;
   background-color: transparent; }
@@ -194,23 +198,23 @@ header {
 
 .promo {
   background-color: transparent;
-  padding-top: 100px; }
+  padding-top: 160px;
+  padding-bottom: 190px; }
   .promo__title {
     justify-content: flex-start;
     gap: 40px;
     max-width: 660px; }
-    .promo__title .btn__promo {
-      font-size: 20px;
-      padding: 12px 60px;
-      border-radius: 6px 28px 6px; }
-    .promo__title form label {
-      font-family: "Poppins-light", sans-serif;
-      font-size: 14px;
-      color: white; }
+  .promo__label {
+    color: white; }
+  .promo .btn__promo {
+    font-size: 20px;
+    padding: 12px 60px;
+    border-radius: 6px 28px 6px; }
 
 .content {
   justify-content: space-between;
-  padding-top: 200px; }
+  padding-top: 140px;
+  padding-bottom: 100px; }
   .content p {
     font-size: 16px; }
   .content .content-block {
@@ -256,9 +260,8 @@ header {
           font-size: 18px;
           font-family: "Poppins-medium", sans-serif;
           text-align: right; }
-
-.row:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+      .content .content-block__values-rows .row:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
 
 .dots_img {
   position: absolute;
@@ -267,31 +270,53 @@ header {
 
 .instruction {
   background-color: #F4F4FA; }
+  .instruction__inner {
+    justify-content: space-between;
+    gap: 80px;
+    padding-top: 140px;
+    padding-bottom: 160px; }
   .instruction__cards {
-    padding-top: 100px;
     justify-content: space-between;
     gap: 40px; }
   .instruction__card {
     max-width: 363px;
+    min-height: 332px;
     padding: 35px 65px 45px 30px;
     justify-content: space-between;
     background-color: white;
-    background-color: white;
     border: 1px solid white;
     border-radius: 6px 100px 6px 6px; }
-  .instruction__card-icon p {
-    font-size: 18px; }
-  .instruction__card-icon img {
-    padding: 18px;
+  .instruction__card-icon {
+    padding: 16px 19px;
     border-radius: 6px;
     background-color: #9EE9EE; }
+  .instruction__card-icon_purple {
+    padding: 18px;
+    border-radius: 6px;
+    background-color: rgba(66, 51, 244, 0.5); }
   .instruction__card-row {
     justify-content: flex-start;
-    padding-top: 20px; }
-  .instruction__card-number p {
-    display: inline-block;
-    padding-right: 18px;
+    gap: 15px; }
+  .instruction__card-number {
     font-size: 20px;
     font-family: "Poppins-semi-bold", sans-serif; }
+  .instruction__card-number_purple {
+    font-size: 20px;
+    font-family: "Poppins-semi-bold", sans-serif;
+    color: #4233f4; }
+  .instruction__card-description {
+    font-size: 18px; }
+  .instruction__clicking {
+    justify-content: flex-end;
+    margin: 0 0 0 auto;
+    gap: 100px; }
+  .instruction__card-number {
+    font-size: 20px;
+    color: #2EACF3;
+    font-family: "Poppins-semi-bold", sans-serif; }
+  .instruction .btn__instruction {
+    font-size: 20px;
+    padding: 12px 60px;
+    border-radius: 6px 28px 6px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,36 +1,30 @@
 .promo {
   background-color: transparent;
-  padding-top: 100px;
+  padding-top: 160px;
+  padding-bottom: 190px;
 
   &__title {
     @include justify-content(flex-start);
-
     gap: 40px;
     max-width: 660px;
+  }
 
-    .btn {
-      &__promo {
-        @include btn-f-size(20px);
-        padding: 12px 60px;
-        border-radius: $border-r-sm $border-r-md $border-r-sm;
-      }
-    }
-
-    form {
-      label {
-        font-family: $f-poppins-light;
-        font-size: $f-md;
-        color: $color-light;
-      }
+  &__label {
+    color: $color-light;
+  }
+  .btn {
+    &__promo {
+      @include btn-f-size(20px);
+      padding: 12px 60px;
+      border-radius: $border-r-sm $border-r-md $border-r-sm;
     }
   }
 }
 
-
-
 .content {
   @include justify-content(space-between);
-  padding-top: 200px;
+  padding-top: 140px;
+  padding-bottom: 100px;
 
   p {
     @include text-base(16px);
@@ -98,12 +92,11 @@
           text-align: right;
         }
       }
+      .row:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+      }
     }
   }
-}
-
-.row:not(:last-child) {
-   border-bottom: 1px solid rgba(0, 0, 0, 0.30);
 }
 
 .dots_img {
@@ -115,44 +108,77 @@
 .instruction {
   background-color: $color-light-gray;
 
+  &__inner {
+    @include justify-content(space-between);
+    gap: 80px;
+    padding-top: 140px;
+    padding-bottom: 160px;
+  }
+
   &__cards {
-    padding-top: 100px;
     @include justify-content(space-between);
     gap: 40px;
   }
 
   &__card {
     max-width: 363px;
+    min-height: 332px;
     padding: 35px 65px 45px 30px;
     @include justify-content(space-between);
-    background-color: $color-light;
     background-color: $color-light;
     border: 1px solid $color-light;
     border-radius: $border-r-sm $border-r-xl $border-r-sm $border-r-sm;
   }
 
   &__card-icon {
+    padding: 16px 19px;
+    border-radius: $border-r-sm;
+    background-color: $color-light-blue;
+  }
 
-    p {
-      @include text-base(18px)
-    }
-
-    img {
-      padding: 18px;
-      border-radius: $border-r-sm;
-      background-color: $color-light-blue;
-    }
+  &__card-icon_purple {
+    padding: 18px;
+    border-radius: $border-r-sm;
+    background-color: $color-light-purple;
   }
 
   &__card-row {
     @include justify-content(flex-start);
-    padding-top: 20px;
+    gap: 15px;
   }
 
-  &__card-number p {
-      display: inline-block;
-      padding-right: 18px;
-      font-size: 20px;
-      font-family: $f-poppins-semi-bold;
+  &__card-number {
+    font-size: 20px;
+    font-family: $f-poppins-semi-bold;
+  }
+
+  &__card-number_purple {
+    font-size: 20px;
+    font-family: $f-poppins-semi-bold;
+    color: $color-dark-purple;
+  }
+
+  &__card-description {
+    @include text-base(18px)
+  }
+
+  &__clicking {
+    @include justify-content(flex-end);
+    margin: 0 0 0 auto;
+    gap: 100px;
+  }
+
+  &__card-number {
+    font-size: 20px;
+    color: $color-dark-blue;
+    font-family: $f-poppins-semi-bold;
+  }
+
+  .btn {
+    &__instruction {
+      @include btn-f-size(20px);
+      padding: 12px 60px;
+      border-radius: $border-r-sm $border-r-md $border-r-sm;
     }
   }
+}
