@@ -18,30 +18,21 @@ footer {
     &__right {
       @include justify-content(space-between);
       align-items: flex-start;
+      gap:30px;
 
-      a {
-        color: $color-light;
-        font-family: $f-poppins-light;
-      }
-    }
-
-    &__right-content {
-      @include justify-content(flex-start);
-        a {
-          padding-right: 30px;
-        }
+      &-content {
+        @include justify-content(flex-start);
+        gap:30px;
       }
 
-    &__right-contact {
-      gap: 15px;
-    }
       p {
         color: #909090;
         padding-bottom: 10px;
       }
     }
 
-  .link-instagram {
-    padding-top: 10px;
+    .link-instagram {
+      padding-top: 10px;
+    }
   }
 }

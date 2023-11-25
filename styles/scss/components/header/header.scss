@@ -1,33 +1,28 @@
-header {
+.header {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
   padding: 25px 0;
   background-color: transparent;
 
+  &__navigation {
+    @include justify-content(space-between);
+  }
 
-  nav {
-    @include justify-content (space-between);
-    background-color: transparent;
+  &__menu {
+    @include justify-content(space-between);
+    gap: 80px;
 
-    .menu {
-      @include justify-content (space-between);
-      gap: 80px;
+    &_list {
+      @include justify-content(space-between);
+      gap: 60px;
+    }
 
-      &__list {
-        @include justify-content (space-between);
-        gap: 60px;
-      }
-      &__link {
-        font-family: $f-poppins-light;
-        color: $color-light;
-        font-size: $f-lg;
-      }
-
-      .btn {
-        &__header {
-          @include btn-f-size(16px);
-          border-radius: $border-r-sm;
-          padding: 10px 20px;
-        }
-      }
+    &_link {
+      font-family: $f-poppins-light;
+      color: $color-light;
+      font-size: $f-lg;
     }
   }
 }

@@ -1,5 +1,7 @@
 body {
   margin: 0 auto;
+  font-family: $f-poppins-regular;
+  font-size: $f-ml;
 }
 
 .container {
@@ -31,26 +33,42 @@ h5 {
   display: inline-block;
   font-family: $f-poppins-semi-bold;
   color: $color-black;
-  font-size: 22px;
+  font-size: $f-xl;
 }
 
-picture {
-  img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: auto;
-    object-fit: cover;
-    z-index: -1;
-    top: 0;
-    min-width: 100%;
-    min-height: 50%;
-    margin: 0 auto;
+.btn {
+  font-family: $f-poppins-regular;
+  font-size: $f-lg;
+  border: 2px solid transparent;
+  border-radius: $border-r-sm $border-r-md $border-r-sm $border-r-md;
+  color: $color-light;
+  background: $color-dark-blue;
+  cursor: pointer;
+  padding: 12px 60px;
+
+  &.btn_header {
+    padding: 12px 18px;
+    border-radius: $border-r-sm;
+    font-size: $f-md;
+  }
+
+  &:hover {
+    border-color: $color-light-blue;
+    transition: 0.3s;
   }
 }
 
+.label {
+  color: $color-light;
+}
+
 a {
+  color: $color-light;
   text-decoration: none;
+  &:hover {
+    color: $color-dark-blue;
+    transition: 0.3s;
+  }
 }
 
 span {
@@ -59,7 +77,7 @@ span {
 
 label {
   font-family: $f-poppins-light;
-  font-size: $f-md;
+  font-size: $f-sm;
 }
 
 ul {

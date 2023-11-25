@@ -12,8 +12,3 @@
   justify-content: $justify-content;
   @extend %flexible;
 }
-
-@mixin btn-f-size($font-size) {
-  font-size: $font-size;
-  @extend %btn;
-}

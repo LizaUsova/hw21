@@ -1,0 +1,29 @@
+.promo {
+  position: relative;
+  background-image: url("../../../../assets/pictures/img/bg.jpg");
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 220px;
+  padding-bottom: 195px;
+  z-index: 1;
+
+  &__title {
+    @include justify-content(flex-start);
+    gap: 40px;
+    max-width: 660px;
+  }
+
+  &__inner {
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.dots_img {
+  position: absolute;
+  z-index: 4;
+  top: 510px;
+  left: 870px;
+}

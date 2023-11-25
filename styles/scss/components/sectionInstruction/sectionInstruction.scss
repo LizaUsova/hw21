@@ -1,0 +1,63 @@
+.instruction {
+  background-color: $color-light-gray;
+
+  &__inner {
+    @include justify-content(space-between);
+    gap: 80px;
+    padding-top: 140px;
+    padding-bottom: 160px;
+  }
+
+  &__cards {
+    @include justify-content(space-between);
+    gap: 40px;
+  }
+
+  &__card {
+    @include justify-content(space-between);
+    align-items: flex-start;
+    max-width: 363px;
+    min-height: 332px;
+    padding: 35px 65px 45px 30px;
+    background-color: $color-light;
+    border: 1px solid $color-light;
+    border-radius: $border-r-sm $border-r-xl $border-r-sm $border-r-sm;
+
+    &-icon {
+      padding: 16px 19px;
+      border-radius: $border-r-sm;
+      background-color: $color-light-blue;
+
+      &_purple {
+        padding: 18px;
+        border-radius: $border-r-sm;
+        background-color: $color-light-purple;
+      }
+    }
+
+    &-row {
+      @include justify-content(flex-start);
+      gap: 15px;
+    }
+
+    &-number {
+      font-size: 20px;
+      font-family: $f-poppins-semi-bold;
+      color: $color-dark-blue;
+
+      &_purple {
+        color: $color-dark-purple;
+      }
+    }
+
+    &-description {
+      @include text-base(18px)
+    }
+  }
+
+  &__clicking {
+    @include justify-content(flex-end);
+    margin: 0 0 0 auto;
+    gap: 100px;
+  }
+}

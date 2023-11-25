@@ -1,34 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Inter';
-  src: local("./../../../assets/fonts/Inter Regular"), local("Inter-Regular"), url("./../../../assets/fonts/Inter-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Inter-Regular.woff") format("woff"), url("./../../../assets/fonts/Inter-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Itim';
-  src: local("./../../../assets/fonts/Itim Regular"), local("Itim-Regular"), url("./../../../assets/fonts/Itim-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Itim-Regular.woff") format("woff"), url("./../../../assets/fonts/Itim-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Poppins-regular';
-  src: local("./../../../assets/fonts/Poppins Regular"), local("Poppins-Regular"), url("./../../../assets/fonts/Poppins-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Regular.woff") format("woff"), url("./../../../assets/fonts/Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Poppins-light';
-  src: local("./../../../assets/fonts/Poppins Light"), local("Poppins-Light"), url("./../../../assets/fonts/Poppins-Light.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Light.woff") format("woff"), url("./../../../assets/fonts/Poppins-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'Poppins-medium';
-  src: local("Poppins Medium"), local("Poppins-Medium"), url("./../../../assets/fonts/Poppins-Medium.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Medium.woff") format("woff"), url("./../../../assets/fonts/Poppins-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Poppins-semi-bold';
-  src: local("Poppins Semi Bold"), local("Poppins-Semi-Bold"), url("./../../../assets/fonts/Poppins-SemiBold.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-SemiBold.woff") format("woff"), url("./../../../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal; }
 /* Указываем box sizing */
 *,
 *::before,
@@ -99,25 +69,49 @@ select {
 /*        scroll-behavior: auto !important;*/
 /*    }*/
 /*}*/
+@font-face {
+  font-family: 'Inter';
+  src: local("./../../../assets/fonts/Inter Regular"), local("Inter-Regular"), url("./../../../assets/fonts/Inter-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Inter-Regular.woff") format("woff"), url("./../../../assets/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Itim';
+  src: local("./../../../assets/fonts/Itim Regular"), local("Itim-Regular"), url("./../../../assets/fonts/Itim-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Itim-Regular.woff") format("woff"), url("./../../../assets/fonts/Itim-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Poppins-regular';
+  src: local("./../../../assets/fonts/Poppins Regular"), local("Poppins-Regular"), url("./../../../assets/fonts/Poppins-Regular.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Regular.woff") format("woff"), url("./../../../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Poppins-light';
+  src: local("./../../../assets/fonts/Poppins Light"), local("Poppins-Light"), url("./../../../assets/fonts/Poppins-Light.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Light.woff") format("woff"), url("./../../../assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Poppins-medium';
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("./../../../assets/fonts/Poppins-Medium.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-Medium.woff") format("woff"), url("./../../../assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Poppins-semi-bold';
+  src: local("Poppins Semi Bold"), local("Poppins-Semi-Bold"), url("./../../../assets/fonts/Poppins-SemiBold.woff2") format("woff2"), url("./../../../assets/fonts/Poppins-SemiBold.woff") format("woff"), url("./../../../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
 h2, h3, h4 {
   font-family: "Poppins-medium", sans-serif;
   color: #000; }
 
-.content p, .instruction__card-description, footer .footer__description {
+footer .footer__description, .instruction__card-description {
   font-family: "Poppins-regular", sans-serif;
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.4; }
 
-header nav, header nav .menu, header nav .menu__list, .promo__title, .content, .content .content-block, .instruction__inner, .instruction__cards, .instruction__card, .instruction__card-row, .instruction__clicking, footer .footer, footer .footer__right, footer .footer__right-content {
+.header__navigation, .header__menu, .header__menu_list, footer .footer, footer .footer__right, footer .footer__right-content, .promo__title, .content, .content .content-block, .instruction__inner, .instruction__cards, .instruction__card, .instruction__card-row, .instruction__clicking {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
-
-header nav .menu .btn__header, .promo .btn__promo, .instruction .btn__instruction {
-  font-family: "Poppins-regular", sans-serif;
-  color: white;
-  background-color: #2EACF3;
-  border: 1px solid #2EACF3; }
 
 .content .content-block__graphic {
   background-repeat: no-repeat;
@@ -125,7 +119,9 @@ header nav .menu .btn__header, .promo .btn__promo, .instruction .btn__instructio
   background-position: center center; }
 
 body {
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "Poppins-regular", sans-serif;
+  font-size: 18px; }
 
 .container {
   max-width: 1200px;
@@ -153,20 +149,32 @@ h5 {
   color: #000;
   font-size: 22px; }
 
-picture img {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: auto;
-  object-fit: cover;
-  z-index: -1;
-  top: 0;
-  min-width: 100%;
-  min-height: 50%;
-  margin: 0 auto; }
+.btn {
+  font-family: "Poppins-regular", sans-serif;
+  font-size: 20px;
+  border: 2px solid transparent;
+  border-radius: 6px 28px 6px 28px;
+  color: white;
+  background: #2EACF3;
+  cursor: pointer;
+  padding: 12px 60px; }
+  .btn.btn_header {
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 16px; }
+  .btn:hover {
+    border-color: #9EE9EE;
+    transition: 0.3s; }
+
+.label {
+  color: white; }
 
 a {
+  color: white;
   text-decoration: none; }
+  a:hover {
+    color: #2EACF3;
+    transition: 0.3s; }
 
 span {
   color: #2EACF3; }
@@ -178,48 +186,98 @@ label {
 ul {
   display: inline-block; }
 
-header {
+.header {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
   padding: 25px 0;
   background-color: transparent; }
-  header nav {
+  .header__navigation {
+    justify-content: space-between; }
+  .header__menu {
     justify-content: space-between;
-    background-color: transparent; }
-    header nav .menu {
+    gap: 80px; }
+    .header__menu_list {
       justify-content: space-between;
-      gap: 80px; }
-      header nav .menu__list {
-        justify-content: space-between;
-        gap: 60px; }
-      header nav .menu__link {
-        font-family: "Poppins-light", sans-serif;
-        color: white;
-        font-size: 16px; }
-      header nav .menu .btn__header {
-        font-size: 16px;
-        border-radius: 6px;
-        padding: 10px 20px; }
+      gap: 60px; }
+    .header__menu_link {
+      font-family: "Poppins-light", sans-serif;
+      color: white;
+      font-size: 20px; }
+
+footer {
+  background-color: #343434; }
+  footer .footer {
+    justify-content: space-between;
+    padding: 105px 0; }
+    footer .footer__left {
+      max-width: 363px; }
+    footer .footer__description {
+      font-size: 12px;
+      color: white;
+      padding-top: 30px; }
+    footer .footer__right {
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px; }
+      footer .footer__right-content {
+        justify-content: flex-start;
+        gap: 30px; }
+      footer .footer__right p {
+        color: #909090;
+        padding-bottom: 10px; }
+    footer .footer .link-instagram {
+      padding-top: 10px; }
+
+.header {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  padding: 25px 0;
+  background-color: transparent; }
+  .header__navigation {
+    justify-content: space-between; }
+  .header__menu {
+    justify-content: space-between;
+    gap: 80px; }
+    .header__menu_list {
+      justify-content: space-between;
+      gap: 60px; }
+    .header__menu_link {
+      font-family: "Poppins-light", sans-serif;
+      color: white;
+      font-size: 20px; }
 
 .promo {
-  background-color: transparent;
-  padding-top: 160px;
-  padding-bottom: 190px; }
+  position: relative;
+  background-image: url("../../../../assets/pictures/img/bg.jpg");
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 220px;
+  padding-bottom: 195px;
+  z-index: 1; }
   .promo__title {
     justify-content: flex-start;
     gap: 40px;
     max-width: 660px; }
-  .promo__label {
-    color: white; }
-  .promo .btn__promo {
-    font-size: 20px;
-    padding: 12px 60px;
-    border-radius: 6px 28px 6px; }
+  .promo__inner {
+    position: absolute;
+    z-index: 2; }
+
+.dots_img {
+  position: absolute;
+  z-index: 4;
+  top: 510px;
+  left: 870px; }
 
 .content {
   justify-content: space-between;
   padding-top: 140px;
   padding-bottom: 100px; }
-  .content p {
-    font-size: 16px; }
   .content .content-block {
     justify-content: space-between;
     align-items: flex-start;
@@ -236,7 +294,7 @@ header {
       gap: 30px; }
     .content .content-block__graphic {
       display: inline-block;
-      background-image: url("../../../assets/pictures/img/infographic.png");
+      background-image: url("../../../../assets/pictures/img/infographic.png");
       height: 365px;
       width: 460px;
       max-width: 100%; }
@@ -247,7 +305,8 @@ header {
       gap: 30px;
       max-width: 200px; }
     .content .content-block__values-description {
-      color: #000; }
+      color: #000;
+      font-size: 16px; }
     .content .content-block__values-title {
       font-family: "Poppins-semi-bold", sans-serif;
       font-size: 18px;
@@ -258,18 +317,12 @@ header {
       gap: 20px; }
       .content .content-block__values-rows .row {
         display: flex;
-        justify-content: space-between; }
-        .content .content-block__values-rows .row p {
-          font-size: 18px;
-          font-family: "Poppins-medium", sans-serif;
-          text-align: right; }
-      .content .content-block__values-rows .row:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-
-.dots_img {
-  position: absolute;
-  right: 70px;
-  top: 600px; }
+        justify-content: space-between;
+        font-size: 16px; }
+        .content .content-block__values-rows .row:not(:last-child) {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+        .content .content-block__values-rows .row__numbers {
+          font-size: 18px; }
 
 .instruction {
   background-color: #F4F4FA; }
@@ -282,45 +335,37 @@ header {
     justify-content: space-between;
     gap: 40px; }
   .instruction__card {
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: 363px;
     min-height: 332px;
     padding: 35px 65px 45px 30px;
-    justify-content: space-between;
     background-color: white;
     border: 1px solid white;
     border-radius: 6px 100px 6px 6px; }
-  .instruction__card-icon {
-    padding: 16px 19px;
-    border-radius: 6px;
-    background-color: #9EE9EE; }
-  .instruction__card-icon_purple {
-    padding: 18px;
-    border-radius: 6px;
-    background-color: rgba(66, 51, 244, 0.5); }
-  .instruction__card-row {
-    justify-content: flex-start;
-    gap: 15px; }
-  .instruction__card-number {
-    font-size: 20px;
-    font-family: "Poppins-semi-bold", sans-serif; }
-  .instruction__card-number_purple {
-    font-size: 20px;
-    font-family: "Poppins-semi-bold", sans-serif;
-    color: #4233f4; }
-  .instruction__card-description {
-    font-size: 18px; }
+    .instruction__card-icon {
+      padding: 16px 19px;
+      border-radius: 6px;
+      background-color: #9EE9EE; }
+      .instruction__card-icon_purple {
+        padding: 18px;
+        border-radius: 6px;
+        background-color: rgba(66, 51, 244, 0.5); }
+    .instruction__card-row {
+      justify-content: flex-start;
+      gap: 15px; }
+    .instruction__card-number {
+      font-size: 20px;
+      font-family: "Poppins-semi-bold", sans-serif;
+      color: #2EACF3; }
+      .instruction__card-number_purple {
+        color: #4233f4; }
+    .instruction__card-description {
+      font-size: 18px; }
   .instruction__clicking {
     justify-content: flex-end;
     margin: 0 0 0 auto;
     gap: 100px; }
-  .instruction__card-number {
-    font-size: 20px;
-    color: #2EACF3;
-    font-family: "Poppins-semi-bold", sans-serif; }
-  .instruction .btn__instruction {
-    font-size: 20px;
-    padding: 12px 60px;
-    border-radius: 6px 28px 6px; }
 
 footer {
   background-color: #343434; }
@@ -335,20 +380,15 @@ footer {
       padding-top: 30px; }
     footer .footer__right {
       justify-content: space-between;
-      align-items: flex-start; }
-      footer .footer__right a {
-        color: white;
-        font-family: "Poppins-light", sans-serif; }
-    footer .footer__right-content {
-      justify-content: flex-start; }
-      footer .footer__right-content a {
-        padding-right: 30px; }
-    footer .footer__right-contact {
-      gap: 15px; }
-    footer .footer p {
-      color: #909090;
-      padding-bottom: 10px; }
-  footer .link-instagram {
-    padding-top: 10px; }
+      align-items: flex-start;
+      gap: 30px; }
+      footer .footer__right-content {
+        justify-content: flex-start;
+        gap: 30px; }
+      footer .footer__right p {
+        color: #909090;
+        padding-bottom: 10px; }
+    footer .footer .link-instagram {
+      padding-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */

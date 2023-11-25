@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="./styles/css/style.css">
 </head>
 <body>
-<header>
+<header class="header">
     <div class="container">
-        <nav>
+        <nav class="header__navigation">
             <div class="logo">
-                <a href="#"><img class="logo__img" src="./assets/pictures/icons/logo.svg" alt="logo"></a>
+                <a href="#"><img class="logo__img" src="./assets/pictures/icons_svg/logo.svg" alt="logo"></a>
             </div>
-            <div class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Terms of use</a></li>
+            <div class="header__menu">
+                <ul class="header__menu_list">
+                    <li class="header__menu_item"><a class="header__menu_link" href="#">Home</a></li>
+                    <li class="header__menu_item"><a class="header__menu_link" href="#">Terms of use</a></li>
                 </ul>
-                <div class="btn">
-                    <a class="btn__header" href="#" >Take the test!</a>
+                <div>
+                    <button class="btn btn_header" href="#" >Take the test!</button>
                 </div>
             </div>
         </nav>
@@ -29,26 +29,24 @@
 </header>
 
 <main>
-    <picture>
-        <source srcset="assets/pictures/img/bg.webp, assets/pictures/img/bg_2x.webp 2x" type="image/webp">
-        <img src="assets/pictures/img/bg.jpg" srcset="assets/pictures/img/bg_2x.jpg 2x" alt="title" loading="lazy" width="1440" height="800">
-    </picture>
     <section class="promo">
         <div class="container">
-            <div class="promo__title">
-                <h1>The most accurate IQ test!</h1>
-                <div class="btn">
-                    <a class="btn__promo" href="#">Take the test!</a>
+            <div class="promo__inner">
+                <div class="promo__title">
+                    <h1>The most accurate IQ test!</h1>
+                    <div>
+                        <button class="btn" href="#">Take the test!</button>
+                    </div>
+                    <form action="#" method="get">
+                        <label class="label">
+                        <input class="custom-checkbox" type="checkbox" name="accept" value="yes">
+                            By clicking "Take the test!" you accept that you have <br> read and acknowledged our <span>terms and conditions</span>.
+                        </label>
+                    </form>
                 </div>
-                <form action="#" method="get">
-                    <label class="promo__label">
-                    <input class="custom-checkbox" type="checkbox" name="accept" value="yes">
-                        By clicking "Take the test!" you accept that you have <br> read and acknowledged our <span>terms and conditions</span>.
-                    </label>
-                </form>
-            </div>
-            <div>
-                <img class="dots_img" src="./assets/pictures/img/dot_ornament.svg" alt="dots">
+                <div>
+                    <img class="dots_img" src="./assets/pictures/icons_svg/dot_ornament.svg" alt="dots">
+                </div>
             </div>
         </div>
     </section>
@@ -111,7 +109,7 @@
                 <div class="instruction__cards">
                     <div class="instruction__card">
                             <div class="instruction__card-icons">
-                                <img class="instruction__card-icon" src="./assets/pictures/icons/location.svg" alt="image">
+                                <img class="instruction__card-icon" src="./assets/pictures/icons_svg/location.svg" alt="image">
                                 <div class="instruction__card-row">
                                     <p class="instruction__card-number">01</p>
                                     <h5>Get ready</h5>
@@ -121,7 +119,7 @@
                         </div>
                     <div class="instruction__card">
                         <div class="instruction__card-icons">
-                            <img class="instruction__card-icon_purple" src="./assets/pictures/icons/test.svg" alt="image">
+                            <img class="instruction__card-icon_purple" src="./assets/pictures/icons_svg/test.svg" alt="image">
                             <div class="instruction__card-row">
                                 <p class="instruction__card-number_purple">02</p>
                                 <h5>Take the test</h5>
@@ -131,7 +129,7 @@
                     </div>
                     <div class="instruction__card">
                         <div class="instruction__card-icons">
-                            <img class="instruction__card-icon" src="./assets/pictures/icons/done.svg" alt="image">
+                            <img class="instruction__card-icon" src="./assets/pictures/icons_svg/done.svg" alt="image">
                             <div class="instruction__card-row">
                                 <p class="instruction__card-number">01</p>
                                 <h5>Certificate</h5>
@@ -147,8 +145,8 @@
                             By clicking "Take the test!" you accept that you have <br> read and acknowledged our <span>terms and conditions</span>.
                         </label>
                     </form>
-                    <div class="btn">
-                        <a class="btn__instruction" href="#">Take the test!</a>
+                    <div>
+                        <button class="btn" href="#">Take the test!</button>
                     </div>
                 </div>
             </div>
@@ -161,10 +159,9 @@
         <div class="footer">
             <div class="footer__left">
                 <div class="logo">
-                    <a href="#"><img class="logo__img" src="./assets/pictures/icons/logo.svg" alt="logo"></a>
+                    <a href="#"><img class="logo__img" src="./assets/pictures/icons_svg/logo.svg" alt="logo"></a>
                 </div>
-                <p class="footer__description">This website's material is provided for entertainment purposes only, and should not be used for making decisions. Any use of the content of this platform is solely at your own risk and we always advise to complete an in person assessment with a professional therapist in your location.
-                </p>
+                <p class="footer__description">This website's material is provided for entertainment purposes only, and should not be used for making decisions. Any use of the content of this platform is solely at your own risk and we always advise to complete an in person assessment with a professional therapist in your location.</p>
                 </div>
             <div class="footer__right">
                 <div class="footer__right-content">
@@ -174,7 +171,7 @@
                 <div class="footer__right-contact">
                     <a href="#">contact us</a>
                     <p>hello@iqlib.com</p>
-                    <a href="#">join us<img class="link-instagram" src="./assets/pictures/icons/instagram.svg" alt=""></a>
+                    <a href="#">join us<img class="link-instagram" src="./assets/pictures/icons_svg/instagram.svg" alt=""></a>
                 </div>
             </div>
         </div>
