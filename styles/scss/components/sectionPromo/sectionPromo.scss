@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  background-image: url("../../assets/pictures/img/bg.jpg");
+  background-image: url("./../../assets/pictures/img/bg.jpg");
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +12,7 @@
   &__title {
     @include justify-content(flex-start);
     gap: 40px;
-    max-width: 660px;
+    max-width: 620px;
   }
 
   &__inner {
@@ -25,7 +25,7 @@
     display: block;
     height: 140px;
     width: 400px;
-    background-image: url("../../assets/pictures/icons_svg/dot_ornament.svg");
+    background-image: url("./../../assets/pictures/icons_svg/dot_ornament.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;

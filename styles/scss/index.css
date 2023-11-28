@@ -252,7 +252,7 @@ footer {
 
 .promo {
   position: relative;
-  background-image: url("../../assets/pictures/img/bg.jpg");
+  background-image: url("./../../assets/pictures/img/bg.jpg");
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,7 +263,7 @@ footer {
   .promo__title {
     justify-content: flex-start;
     gap: 40px;
-    max-width: 660px; }
+    max-width: 620px; }
   .promo__inner {
     position: absolute;
     z-index: 2; }
@@ -272,7 +272,7 @@ footer {
     display: block;
     height: 140px;
     width: 400px;
-    background-image: url("../../assets/pictures/icons_svg/dot_ornament.svg");
+    background-image: url("./../../assets/pictures/icons_svg/dot_ornament.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -301,7 +301,7 @@ footer {
       gap: 30px; }
     .content .content-block__graphic {
       display: inline-block;
-      background-image: url("../../assets/pictures/img/infographic.png");
+      background-image: url("./../../assets/pictures/img/infographic.png");
       height: 365px;
       width: 460px;
       max-width: 100%; }
