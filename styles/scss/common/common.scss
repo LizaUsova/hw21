@@ -59,27 +59,30 @@ h5 {
 }
 
 .label {
-  color: $color-light;
+  color: #fff;
+}
+
+label {
+  a {
+    color: $color-dark-blue;
+
+    &:hover {
+      color: $color-dark-blue;
+    }
+  }
 }
 
 a {
   color: $color-light;
   text-decoration: none;
   &:hover {
+    cursor: pointer;
     color: $color-dark-blue;
     transition: 0.3s;
   }
 }
 
-span {
-  color: $color-dark-blue;
-}
-
 label {
   font-family: $f-poppins-light;
   font-size: $f-sm;
-}
-
-ul {
-  display: inline-block;
 }

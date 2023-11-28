@@ -41,12 +41,14 @@
     }
 
     &-number {
-      font-size: 20px;
+      font-size: $f-lg;
       font-family: $f-poppins-semi-bold;
       color: $color-dark-blue;
 
       &_purple {
         color: $color-dark-purple;
+        font-family: $f-poppins-semi-bold;
+        font-size:$f-lg;
       }
     }
 

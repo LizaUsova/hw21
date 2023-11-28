@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  background-image: url("../../../../assets/pictures/img/bg.jpg");
+  background-image: url("../../assets/pictures/img/bg.jpg");
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,11 +19,17 @@
     position: absolute;
     z-index: 2;
   }
-}
 
-.dots_img {
-  position: absolute;
-  z-index: 4;
-  top: 510px;
-  left: 870px;
+  &:after {
+    content: '';
+    display: block;
+    height: 140px;
+    width: 400px;
+    background-image: url("../../assets/pictures/icons_svg/dot_ornament.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 723px;
+    right: 200px;
+  }
 }
