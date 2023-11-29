@@ -108,7 +108,7 @@ footer .footer__description, .instruction__card-description {
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.4; }
 
-.header__navigation, .header__menu, .header__menu_list, footer .footer, footer .footer__right, footer .footer__right-content, .promo__title, .content, .content .content-block, .instruction__inner, .instruction__cards, .instruction__card, .instruction__card-row, .instruction__clicking {
+.header__navigation, .header__menu, .header__menu_list, footer .footer, footer .footer__right, footer .footer__right-content, .promo__title, .content, .content .content-block, .content .content-block__left, .content .content-block__right, .content .content-block__graphic, .instruction__inner, .instruction__cards, .instruction__card, .instruction__card-row, .instruction__clicking {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
@@ -288,19 +288,19 @@ footer {
     align-items: flex-start;
     gap: 60px; }
     .content .content-block__left {
-      display: inline-flex;
+      justify-content: flex-start;
+      align-items: flex-start;
       flex-direction: column;
       gap: 50px;
       max-width: 30%; }
       .content .content-block__left a {
         color: #2EACF3; }
     .content .content-block__right {
-      display: inline-flex;
       justify-content: space-between;
       max-width: 60%;
       gap: 30px; }
     .content .content-block__graphic {
-      display: inline-block;
+      justify-content: space-between;
       background-image: url("./../../assets/pictures/img/infographic.png");
       height: 365px;
       width: 460px;
