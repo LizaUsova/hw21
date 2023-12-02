@@ -7,15 +7,14 @@
   background-color: transparent;
 
   &__navigation {
-    @include justify-content(space-between);
+    align-items: center;
   }
 
   &__menu {
-    @include justify-content(space-between);
+    align-items: center;
     gap: 80px;
 
     &_list {
-      @include justify-content(space-between);
       gap: 60px;
     }
 

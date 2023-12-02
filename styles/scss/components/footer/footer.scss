@@ -2,7 +2,6 @@ footer {
   background-color: $color-dark-gray;
 
   .footer {
-    @include justify-content(space-between);
     padding: 105px 0;
 
     &__left {
@@ -16,12 +15,10 @@ footer {
     }
 
     &__right {
-      @include justify-content(space-between);
-      align-items: flex-start;
       gap:30px;
 
       &-content {
-        @include justify-content(flex-start);
+        justify-content: flex-start;
         gap:30px;
       }
 

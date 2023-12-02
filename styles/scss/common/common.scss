@@ -10,6 +10,15 @@ body {
   margin: 0 auto;
 }
 
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
 h1 {
   font-family: $f-poppins-medium;
   color: $color-light;
@@ -58,20 +67,6 @@ h5 {
   }
 }
 
-.label {
-  color: #fff;
-}
-
-label {
-  a {
-    color: $color-dark-blue;
-
-    &:hover {
-      color: $color-dark-blue;
-    }
-  }
-}
-
 a {
   color: $color-light;
   text-decoration: none;
@@ -82,7 +77,19 @@ a {
   }
 }
 
+.label {
+  color: #fff;
+}
+
 label {
   font-family: $f-poppins-light;
   font-size: $f-sm;
+
+  a {
+    color: $color-dark-blue;
+
+    &:hover {
+      color: $color-dark-blue;
+    }
+  }
 }

@@ -1,10 +1,11 @@
 //family-fonts
-$f-inter: Inter, sans-serif;
-$f-itim: 'Itim', sans-serif;
-$f-poppins-light: 'Poppins-light', sans-serif;
-$f-poppins-regular: 'Poppins-regular', sans-serif;
-$f-poppins-medium: 'Poppins-medium', sans-serif;
-$f-poppins-semi-bold: 'Poppins-semi-bold', sans-serif;
+$s-serif: sans-serif;
+$f-inter: Inter, $s-serif;
+$f-itim: 'Itim', $s-serif;
+$f-poppins-light: 'Poppins-light', $s-serif;
+$f-poppins-regular: 'Poppins-regular', $s-serif;
+$f-poppins-medium: 'Poppins-medium', $s-serif;
+$f-poppins-semi-bold: 'Poppins-semi-bold', $s-serif;
 
 //font-sizes
 $f-xs: 12px;

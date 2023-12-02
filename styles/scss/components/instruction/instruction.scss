@@ -2,20 +2,16 @@
   background-color: $color-light-gray;
 
   &__inner {
-    @include justify-content(space-between);
     gap: 80px;
     padding-top: 140px;
     padding-bottom: 160px;
   }
 
   &__cards {
-    @include justify-content(space-between);
     gap: 40px;
   }
 
   &__card {
-    @include justify-content(space-between);
-    align-items: flex-start;
     max-width: 363px;
     min-height: 332px;
     padding: 35px 65px 45px 30px;
@@ -36,7 +32,8 @@
     }
 
     &-row {
-      @include justify-content(flex-start);
+      justify-content: flex-start;
+      align-items: center;
       gap: 15px;
     }
 
@@ -58,7 +55,7 @@
   }
 
   &__clicking {
-    @include justify-content(flex-end);
+    justify-content: flex-end;
     margin: 0 0 0 auto;
     gap: 100px;
   }

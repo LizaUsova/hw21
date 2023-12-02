@@ -10,7 +10,6 @@
   z-index: 1;
 
   &__title {
-    @include justify-content(flex-start);
     gap: 40px;
     max-width: 620px;
   }

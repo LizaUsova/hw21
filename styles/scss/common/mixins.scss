@@ -7,8 +7,3 @@
   font-size: $font-size;
   @extend %text-main;
 }
-
-@mixin justify-content($justify-content) {
-  justify-content: $justify-content;
-  @extend %flexible;
-}
